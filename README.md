@@ -2,7 +2,9 @@
 
 <br />
 
+<div align="center"><img src="https://imgur.com/c6Y4tGw.png" width="120"/></div>
 <div align="center"><img src="https://imgur.com/1MfnLVl.png" /></div>
+<div align="center"><img src="https://i.imgur.com/QgwDieO.png" alt="Prisma" height="130px"></div>
 
 <div align="center"><strong>🚀 Bootstrap your GraphQL server within seconds</strong></div>
 <div align="center">Advanced starter kit for a flexible GraphQL server for TypeScript and Prisma - based on best practices from the GraphQL community.</div>
