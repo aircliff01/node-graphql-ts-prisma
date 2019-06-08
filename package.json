@@ -1,0 +1,25 @@
+{
+  "name": "node-graphql-ts-prisma",
+  "scripts": {
+    "gen:types": "gg",
+    "start": "dotenv -- nodemon -e ts,graphql,yml -x npm run gen:types & ts-node src/index.ts",
+    "debug": "dotenv -- nodemon -e ts,graphql,yml -x ts-node --inspect src/index.ts",
+    "build": "rimraf dist && tsc"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "graphql-yoga": "1.17.4",
+    "jsonwebtoken": "8.5.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.2",
+    "@types/node": "10.14.8",
+    "dotenv-cli": "1.4.0",
+    "graphqlgen": "^0.6.0-rc9",
+    "nodemon": "1.19.1",
+    "prisma": "1.33.0",
+    "rimraf": "2.6.3",
+    "ts-node": "7.0.1",
+    "typescript": "3.2.2"
+  }
+}

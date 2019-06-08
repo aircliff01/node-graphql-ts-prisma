@@ -1,0 +1,22 @@
+language: typescript
+
+# The file path pointing to the graphql schema
+schema: ./src/schema.graphql
+
+# Points to the definition of the context object that's passed through your GraphQL resolver chain
+context: ./src/types.ts:Context
+
+# Specifies where the generated type definitions and default resolver implementations should be located
+output: ./src/generated/graphqlgen.ts
+
+# A mapping from types in your GraphQL schema to the models defined in your programming language
+models:
+  files:
+    - ./src/generated/prisma-client/index.ts
+    - ./src/types.ts
+
+resolver-scaffolding:
+  # Specifies where the scaffolded resolvers should be located. Must point to a directory
+  output: ./tmp/
+  # Specifies the layout for the generated files. Possible values: file-per-type (more layouts coming soon: single-file, file-per-type-classes, single-file-classes).
+  layout: file-per-type
